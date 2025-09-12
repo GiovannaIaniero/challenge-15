@@ -19,5 +19,12 @@ const productos = [ { id: 1, nombre: "Laptop", precio: 1200, categoria: "tecnolo
 const productosConStock = productos.filter(productos => productos.stock > 0);
 console.log (productosConStock);
 
+/*Crear un array solo con los nombres y precios de los productos*/
+const nombresyprecios = productos.map(productos => {
+    return {nombre: productos.nombre, precio: productos.precio};
+    
+});
+console.log (nombresyprecios);
+
 
 
