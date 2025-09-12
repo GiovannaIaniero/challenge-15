@@ -26,5 +26,10 @@ const nombresyprecios = productos.map(productos => {
 });
 console.log (nombresyprecios);
 
+/*Filtrar los productos de tecnología que tienen stock*/
+
+const productostecnologiasConStock = productos.filter(productos => productos.categoria === "tecnologia" && productos.stock > 0)
+console.log (productostecnologiasConStock);
+
 
 
