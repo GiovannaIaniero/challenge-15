@@ -14,3 +14,9 @@ const estudiantes = [ { id: 1, nombre: "Ana", edad: 20, promedio: 8.5, carrera: 
 
 const estudiantesConBuenPromedio = estudiantes.filter(estudiantes => estudiantes.promedio > 8.0);
 console.log (estudiantesConBuenPromedio);
+
+/*Crear un array solo con nombres y carreras*/
+
+const nombresYCarreras = estudiantes.map(estudiantes => ({nombre: estudiantes.nombre, carrera: estudiantes.carrera}))
+console.log (nombresYCarreras);
+
