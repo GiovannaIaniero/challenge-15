@@ -31,5 +31,8 @@ console.log (nombresyprecios);
 const productostecnologiasConStock = productos.filter(productos => productos.categoria === "tecnologia" && productos.stock > 0)
 console.log (productostecnologiasConStock);
 
+/*Encontrar el producto llamado "Monitor"*/
 
+const productoMonitor = productos.find(productos => productos.nombre === "Monitor");
+console.log (productoMonitor);
 
