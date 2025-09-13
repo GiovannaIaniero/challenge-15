@@ -15,4 +15,9 @@ const tareas = [{ id: 1, descripcion: "Hacer ejercicio", completada: true, prior
 const tareasPendientes = tareas.filter(tareas => !tareas.completada);
 console.log(tareasPendientes);
 
+/*Crear un array solo con las descripciones de las tareas*/
+
+const descripcionesTareas = tareas.map(tareas => tareas.descripcion);
+console.log(descripcionesTareas);
+
 
