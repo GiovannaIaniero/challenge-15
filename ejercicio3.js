@@ -20,4 +20,9 @@ console.log(tareasPendientes);
 const descripcionesTareas = tareas.map(tareas => tareas.descripcion);
 console.log(descripcionesTareas);
 
+/*Filtrar las tareas de alta prioridad que no están completadas*/
+
+const tareasAltaPrioridadNoCompletadas = tareas.filter(tareas => tareas.prioridad ==="alta" && !tareas.completada);
+console.log(tareasAltaPrioridadNoCompletadas);
+
 
