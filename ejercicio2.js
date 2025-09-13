@@ -20,3 +20,9 @@ console.log (estudiantesConBuenPromedio);
 const nombresYCarreras = estudiantes.map(estudiantes => ({nombre: estudiantes.nombre, carrera: estudiantes.carrera}))
 console.log (nombresYCarreras);
 
+/*Filtrar estudiantes de Ingeniería mayores de 19 años*/
+
+const estudiantesIngenieriaMayores19 = estudiantes.filter (estudiantes => estudiantes.carrera === "Ingeniería" && estudiantes.edad > 19);
+console.log (estudiantesIngenieriaMayores19);
+
+
