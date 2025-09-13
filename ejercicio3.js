@@ -25,4 +25,8 @@ console.log(descripcionesTareas);
 const tareasAltaPrioridadNoCompletadas = tareas.filter(tareas => tareas.prioridad ==="alta" && !tareas.completada);
 console.log(tareasAltaPrioridadNoCompletadas);
 
+/*Encontrar la tarea que contiene "JavaScript" en su descripción*/
+
+const tareaConJavaScript = tareas.find(tareas => tareas.descripcion.includes("JavaScript"));
+console.log(tareaConJavaScript);
 
