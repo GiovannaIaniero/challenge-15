@@ -25,4 +25,11 @@ console.log (nombresYCarreras);
 const estudiantesIngenieriaMayores19 = estudiantes.filter (estudiantes => estudiantes.carrera === "Ingeniería" && estudiantes.edad > 19);
 console.log (estudiantesIngenieriaMayores19);
 
+/*Encontrar al estudiante con ID 3*/
+
+const estudianteConID3 = estudiantes.find(estudiante => estudiante.id === 3);
+console.log (estudianteConID3);
+
+
+
 
